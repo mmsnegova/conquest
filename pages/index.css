@@ -161,6 +161,8 @@ h6 {
 
 .conteiner {
   max-width: 1366px;
+  padding-left: 97px;
+  padding-right: 98px;
   margin: 0 auto;
 }
 
