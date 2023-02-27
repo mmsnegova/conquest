@@ -1,0 +1,42 @@
+.header {
+  &__menu-burger {
+    @media screen and (max-width: $tablet) {
+      position: relative;
+      width: 24px;
+      height: 21px;
+      display: block;
+      margin: 0;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    span {
+      @extend %burger;
+      @media screen and (max-width: $tablet) {
+        top: 9px;
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+    }
+    &::before {
+      @extend %burger;
+      @media screen and (max-width: $tablet) {
+        content: "";
+        top: 0;
+        transition: 0.3s;
+      }
+    }
+    &::after {
+      @extend %burger;
+      @media screen and (max-width: $tablet) {
+        content: "";
+        bottom: 0;
+        transition: 0.3s;
+      }
+    }
+    &:hover {
+      @media screen and (hover: hover) and (pointer: fine) {
+        opacity: 0.6;
+      }
+    }
+  }
+}

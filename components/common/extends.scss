@@ -1,0 +1,19 @@
+%nav {
+  @media screen and (max-width: 1023px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+%burger {
+  @media screen and (max-width: 1023px) {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: black;
+    margin: auto;
+  }
+}

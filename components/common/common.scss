@@ -1,0 +1,18 @@
+//общие стили классы ля вссех элементов
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+  font-family: "Roboto";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.conteiner {
+  max-width: 1366px;
+  margin: 0 auto;
+}
