@@ -1,0 +1,28 @@
+.products {
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25.5px;
+  }
+  &__title {
+  }
+
+  &__more {
+    align-self: flex-end;
+    position: relative;
+    background: none;
+    @include font(16px, 19px, $dark-brown, $medium);
+    padding-bottom: 11.5px;
+    &::after {
+      position: absolute;
+      left: 1.5px;
+      bottom: 0;
+      display: block;
+      content: "";
+      width: 101px;
+      height: 1px;
+      background-color: $light-gray;
+    }
+  }
+}

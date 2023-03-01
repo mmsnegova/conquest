@@ -12,9 +12,36 @@
   -moz-text-size-adjust: 100%;
 }
 
-.conteiner {
+.container {
   max-width: 1366px;
-  padding-left: 97px;
+  padding-left: 98px;
   padding-right: 98px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  @include font(32px, 43px, $graphite-black, $regular, $playfair-display);
+}
+
+.description {
+  @include font(16px, 27px, $dark-brown);
+}
+
+.button-catalog {
+  width: 205px;
+  height: 64px;
+  text-align: center;
+  @include font(12px, 14px, $white, $medium);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hover-opacity {
+  cursor: pointer;
+  @extend %opacity;
+  &:hover {
+    opacity: 0.8;
+  }
 }

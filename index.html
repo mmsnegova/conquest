@@ -9,109 +9,158 @@
   <body>
     <div class="page">
       <header class="header">
-        <div class="conteiner">
-          <div class="header__logo"></div>
-          <h1 class="header__title">CONQUEST</h1>
-          <nav>
-            <ul class="header__menu">
-              <li class="header__menu-item">Каталог</li>
-              <li class="header__menu-item">Акции</li>
-              <li class="header__menu-item">Доставка</li>
-              <li class="header__menu-item">Контакты</li>
-            </ul>
-          </nav>
-          <div class="header__icons">
-            <a href="#" class="header__link">
-              <img src="" alt="Поиск" class="header__icon" />
-            </a>
-            <a href="#" class="header__link">
-              <img src="" alt="Лайк" class="header__icon header__icon_like" />
-            </a>
-            <a href="#" class="header__link">
-              <img src="" alt="Корзина" class="header__icon" />
-            </a>
+        <div class="container">
+          <div class="header__row">
+            <div class="logo">
+              <img
+                class="logo__image logo__image_header"
+                src="././images/logo_header.svg"
+                alt="Лого"
+              />
+              <h1 class="logo__title logo__title_header">CONQUEST</h1>
+            </div>
+            <nav>
+              <ul class="header__menu">
+                <li class="header__menu-item hover-opacity">Каталог</li>
+                <li class="header__menu-item hover-opacity">Акции</li>
+                <li class="header__menu-item hover-opacity">Доставка</li>
+                <li class="header__menu-item hover-opacity">Контакты</li>
+              </ul>
+            </nav>
+            <div class="header__icons">
+              <a href="#" class="header__link hover-opacity">
+                <img
+                  src="./images/search.svg"
+                  alt="Поиск"
+                  class="header__icon"
+                />
+              </a>
+              <a href="#" class="header__link hover-opacity">
+                <img
+                  src="./images/like.svg"
+                  alt="Лайк"
+                  class="header__icon header__icon_like"
+                />
+                <div class="header__like-count">1</div>
+              </a>
+              <a href="#" class="header__link hover-opacity">
+                <img
+                  src="./images/bascket.svg"
+                  alt="Корзина"
+                  class="header__icon"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </header>
       <main class="main">
         <section class="banner">
-          <div class="conteiner">
+          <div class="container">
             <div class="banner__wrapper">
               <div class="banner__info">
                 <h2 class="banner__title">Весна/Лето 2019</h2>
                 <p class="banner__subtitle">Коллекция</p>
                 <p class="banner__description">
-                  Швейцарские часы в наличии в Москве <br />
-                  и с доставкой по всему миру
+                  Швейцарские часы в наличии в Москве
                 </p>
-                <button type="button" class="banner__button button">
+                <p class="banner__description">и с доставкой по всему миру</p>
+                <button
+                  type="button"
+                  class="banner__button button-catalog hover-opacity"
+                >
                   Смотреть каталог
                 </button>
               </div>
-              <div class="banner__figure"></div>
+              <div class="banner__figure">
+                <div class="banner__image"></div>
+                <div class="banner__image-sign">
+                  <p class="banner__image-price">22 000</p>
+                </div>
+                <p class="banner__image-description">28 мм диаметр</p>
+              </div>
             </div>
           </div>
         </section>
         <section class="products">
-          <div class="conteiner">
+          <div class="container">
             <div class="products__row">
-              <h2 class="products__title">Популярные модели</h2>
-              <button type="button" class="produts__more">Смотреть все</button>
+              <h2 class="products__title title">Популярные модели</h2>
+              <button type="button" class="products__more hover-opacity">
+                Смотреть все
+              </button>
             </div>
             <ul class="cards">
               <li class="cards__item">
                 <h3 class="cards__title">RADO</h3>
                 <p class="cards__price">65 300</p>
-                <img src="" alt="₽" class="cards_rub" />
                 <img
-                  src="./images/green-chair.png"
+                  src="./images/watch_1.png"
                   alt="Товар"
                   class="cards__image"
                 />
-                <button class="cards__more">Подробнее</button>
+                <div class="cards__decor"></div>
+                <button class="cards__more hover-opacity">Подробнее</button>
               </li>
               <li class="cards__item">
                 <h3 class="cards__title">BVLGARI</h3>
                 <p class="cards__price">81 700</p>
-                <img src="" alt="₽" class="cards_rub" />
                 <img
-                  src="./images/green-chair.png"
+                  src="./images/watch_3.png"
                   alt="Товар"
                   class="cards__image"
                 />
-                <button class="cards__more">Подробнее</button>
+                <div class="cards__decor"></div>
+                <button class="cards__more hover-opacity">Подробнее</button>
               </li>
               <li class="cards__item">
                 <h3 class="cards__title">BVLGARI</h3>
                 <p class="cards__price">72 700</p>
-                <img src="" alt="₽" class="cards_rub" />
                 <img
-                  src="./images/green-chair.png"
+                  src="./images/watch_4.png"
                   alt="Товар"
                   class="cards__image"
                 />
-                <button class="cards__more">Подробнее</button>
+                <div class="cards__decor"></div>
+                <button class="cards__more hover-opacity">Подробнее</button>
               </li>
             </ul>
           </div>
         </section>
         <section class="gallery">
-          <div class="conteiner">
-            <div class="gallery__wrapper">
-              <div class="gallery__figure"></div>
-              <div class="gallery__control-buttons">
-                <button type="button" class="gallery__previous"></button>
-                <span class="gallery__quantity">01</span>
-                <button type="button" class="gallery__next"></button>
+          <div class="container">
+            <div class="gallery__decor gallery__decor_backgroude"></div>
+            <div class="gallery__decor gallery__decor_small-circle"></div>
+            <div
+              class="gallery__decor gallery__decor_large-circle-shadow"
+            ></div>
+            <div class="gallery__decor gallery__decor_large-circle"></div>
+            <div class="gallery__row">
+              <div class="gallery__column">
+                <div class="gallery__figure"></div>
+                <div class="gallery__control-buttons">
+                  <button
+                    type="button"
+                    class="gallery__control-button gallery__control-button_left"
+                  ></button>
+                  <span class="gallery__quantity">01</span>
+                  <button
+                    type="button"
+                    class="gallery__control-button gallery__control-button_right"
+                  ></button>
+                </div>
               </div>
               <div class="gallery__info">
-                <h2 class="gallery__title">Подлинное качество</h2>
-                <p class="gallery__description">
+                <h2 class="gallery__title title">Подлинное качество</h2>
+                <p class="gallery__description description">
                   Все часы производятся в Швейцарии и имеют сертификаты
                   качества. Настоящие швейцарские часы — это предмет гордости и
                   престижа.
                 </p>
-                <button type="button" class="gallery__button button">
+                <button
+                  type="button"
+                  class="gallery__button button-catalog hover-opacity"
+                >
                   Смотреть каталог
                 </button>
               </div>
@@ -119,74 +168,129 @@
           </div>
         </section>
         <section class="networks">
-          <div class="conteiner">
+          <div class="container">
             <div class="networks__wrapper">
-              <div class="networks__figure"></div>
               <div class="networks__info">
-                <h2 class="networks__title">Подлинное качество</h2>
-                <p class="networks__description">
-                  Все часы производятся в Швейцарии и имеют сертификаты
-                  качества. Настоящие швейцарские часы — это предмет гордости и
-                  престижа.
+                <h2 class="networks__title title">
+                  Следите за нашими новостями
+                </h2>
+                <p class="networks__description description">
+                  Подписывайтесь на
+                  <span class="networks__mail">@conquest_watch</span> в соцсетях
+                  и узнавайте о новинках и акциях первыми.
                 </p>
                 <div class="networks__icons">
-                  <a href="#" class="networks__link">
-                    <img src="" alt="instagram" class="networks__icon" />
+                  <a href="#" class="networks__link hover-opacity">
+                    <img
+                      src="./images/instagram_icon.svg"
+                      alt="instagram"
+                      class="networks__icon"
+                    />
                   </a>
-                  <a href="#" class="networks__link">
-                    <img src="" alt="faxebook" class="networks__icon" />
+                  <a href="#" class="networks__link hover-opacity">
+                    <img
+                      src="./images/facebook_icon.svg"
+                      alt="facebook"
+                      class="networks__icon"
+                    />
                   </a>
-                  <a href="#" class="networks__link">
-                    <img src="" alt="twitter" class="networks__icon" />
+                  <a href="#" class="networks__link hover-opacity">
+                    <img
+                      src="./images/twitter_icon.svg"
+                      alt="twitter"
+                      class="networks__icon"
+                    />
                   </a>
                 </div>
+              </div>
+              <div class="networks__figures">
+                <figure class="networks__figure">
+                  <img
+                    src="./images/photo_1.jpg"
+                    alt="Часы"
+                    class="networks__figure-item"
+                  />
+                </figure>
+                <figure class="networks__figure">
+                  <img
+                    src="./images/photo_2.jpg"
+                    alt="Часы"
+                    class="networks__figure-item"
+                  />
+                </figure>
+                <figure class="networks__figure">
+                  <img
+                    src="./images/photo_3.jpg"
+                    alt="Часы"
+                    class="networks__figure-item"
+                  />
+                </figure>
               </div>
             </div>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <div class="conteiner">
+        <div class="container">
           <div class="footer__row">
             <div class="footer__column">
-              <h2 class="footer__title">CONQUEST</h2>
+              <div class="logo">
+                <img
+                  class="logo__image logo__image_footer"
+                  src="././images/logo_footer.svg"
+                  alt="Лого"
+                />
+                <h2 class="logo__title logo__title_footer">CONQUEST</h2>
+              </div>
               <nav>
                 <ul class="footer__list">
-                  <li class="footer__list-item">8 (499) 450-47-97</li>
-                  <li class="footer__list-item">info@conquest.watch.ru</li>
+                  <li class="footer__list-contact">8 (499) 450-47-97</li>
+                  <li class="footer__list-contact">info@conquest.watch.ru</li>
                 </ul>
               </nav>
             </div>
             <div class="footer__column">
-              <h2 class="footer__title">о компании</h2>
+              <h2 class="footer__subtitle">о компании</h2>
               <nav>
                 <ul class="footer__list">
-                  <li class="footer__list-item">Наши магазины</li>
-                  <li class="footer__list-item">Вакансии</li>
-                  <li class="footer__list-item">Сертификаты</li>
-                  <li class="footer__list-item">Отзывы</li>
+                  <li class="footer__list-item hover-opacity">Наши магазины</li>
+                  <li class="footer__list-item hover-opacity">Вакансии</li>
+                  <li class="footer__list-item hover-opacity">Сертификаты</li>
+                  <li class="footer__list-item hover-opacity">Отзывы</li>
                 </ul>
               </nav>
             </div>
             <div class="footer__column">
-              <h2 class="footer__title">покупателям</h2>
+              <h2 class="footer__subtitle">покупателям</h2>
               <nav>
                 <ul class="footer__list">
-                  <li class="footer__list-item">Каталог товаров</li>
-                  <li class="footer__list-item">Как заказать?</li>
-                  <li class="footer__list-item">FAQ</li>
-                  <li class="footer__list-item">Корпоративным клиентам</li>
+                  <li class="footer__list-item hover-opacity">
+                    Каталог товаров
+                  </li>
+                  <li class="footer__list-item hover-opacity">Как заказать?</li>
+                  <li class="footer__list-item hover-opacity">FAQ</li>
+                  <li class="footer__list-item hover-opacity">
+                    Корпоративным клиентам
+                  </li>
                 </ul>
               </nav>
             </div>
             <div class="footer__column">
-              <h2 class="footer__title">оплата и доставка</h2>
+              <h2 class="footer__subtitle">оплата и доставка</h2>
               <nav>
                 <ul class="footer__list">
-                  <li class="footer__list-item">Способы оплаты</li>
-                  <li class="footer__list-item">Время доставки</li>
-                  <li class="footer__list-item">Гарантии и ремонт</li>
-                  <li class="footer__list-item">Возврат и компенсация</li>
+                  <li class="footer__list-item hover-opacity">
+                    Способы оплаты
+                  </li>
+                  <li class="footer__list-item hover-opacity">
+                    Время доставки
+                  </li>
+                  <li class="footer__list-item hover-opacity">
+                    Гарантии и ремонт
+                  </li>
+                  <li class="footer__list-item hover-opacity">
+                    Возврат и компенсация
+                  </li>
                 </ul>
               </nav>
             </div>

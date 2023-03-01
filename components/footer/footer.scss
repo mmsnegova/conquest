@@ -1,2 +1,36 @@
 .footer {
+  background-color: $dark-brown;
+  padding-top: 79px;
+  padding-bottom: 67px;
+  align-items: flex-start;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: calc(185px - 97px);
+    padding-right: calc(185px - 97px);
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__subtitle {
+    @include font(14px, 16px, $white, $bold);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  &__list-contact {
+    @include font(12px, 14px, $white-transparent75);
+  }
+  &__list-item {
+    @include font(12px, 14px, $white-transparent75);
+  }
 }

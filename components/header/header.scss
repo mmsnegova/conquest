@@ -1,4 +1,47 @@
 .header {
+  background-color: $light;
+  &__row {
+    display: flex;
+    padding-top: 31px;
+    padding-bottom: 28px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 65px;
+  }
+  &__menu-item {
+    @include font(14px, 16px, $brown);
+  }
+
+  &__icons {
+    display: flex;
+    gap: 23px;
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__icon {
+  }
+
+  &__like-count {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $coral-pink;
+    @include font(8px, 9px, $graphite-black);
+  }
+
   &__menu-burger {
     @media screen and (max-width: $tablet) {
       position: relative;
