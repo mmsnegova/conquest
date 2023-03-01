@@ -11,6 +11,7 @@
   &__menu {
     display: flex;
     gap: 65px;
+    @extend %nav;
   }
   &__menu-item {
     @include font(14px, 16px, $brown);
@@ -43,6 +44,7 @@
   }
 
   &__menu-burger {
+    display: none;
     @media screen and (max-width: $tablet) {
       position: relative;
       width: 24px;

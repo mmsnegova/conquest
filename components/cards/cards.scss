@@ -4,6 +4,9 @@
   gap: 30px;
   grid-template-columns: repeat(auto-fill, 370px);
   margin-bottom: 86px;
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: repeat(auto-fill, 280px);
+  }
 
   &__item {
     display: flex;
@@ -72,6 +75,10 @@
     width: 313px;
     height: 313px;
     margin-bottom: 19px;
+    @media screen and (max-width: $mobile) {
+      width: 224px;
+      height: 224px;
+    }
   }
   &__decor {
     width: 313px;
@@ -87,5 +94,9 @@
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     transform: rotate(180deg);
+    @media screen and (max-width: $mobile) {
+      width: 224px;
+      height: 224px;
+    }
   }
 }
